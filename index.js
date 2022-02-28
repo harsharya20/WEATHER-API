@@ -1,4 +1,4 @@
-const api='********************';
+const api='0d347afa9b5a25c21112515e63580bf0';
 
 const iconImg = document.getElementById('weather-icon');
 const loc = document.querySelector('#location');
@@ -20,7 +20,7 @@ window.addEventListener('load', () => {
         //storing longitude and latitude in variables
         long = position.coords.longitude;
         lat = position.coords.latitude;
-        //use of js fetch API.The fetch APi enables to call and get data formAPI services. URL need
+        //use of js fetch API.The fetch APi enables to call and get data from API services. URL need
         //to be converted into JSON format so that we can use it in our app
         const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}&units=metric`;
         //console.log(base);
